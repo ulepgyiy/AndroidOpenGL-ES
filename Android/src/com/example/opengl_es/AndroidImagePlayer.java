@@ -1,10 +1,6 @@
 package com.example.opengl_es;
 
-import java.io.IOException;
-import java.io.InputStream;
-
 import android.app.Activity;
-import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.opengl.GLES20;
@@ -14,7 +10,7 @@ import android.util.Log;
 
 public class AndroidImagePlayer 
 {
-	private static final String TAG = "ShowImage";
+	private static final String TAG = "AndroidImagePlayer";
 	private int UnityTextureID = -1;
 	private Activity activity;
 	private Bitmap bitmap;
@@ -70,7 +66,7 @@ public class AndroidImagePlayer
 		UnityTextureID = id;
 		Log.d(TAG,"--->Œ∆¿ÌID£∫"+id);
 		rendererImage();
-		return id;
+		return UnityTextureID;
 	}
 	
 	private void rendererImage()
